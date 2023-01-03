@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/user/{username}', [UsersController::class, 'getProfile']);
+
+Route::get('/teste', [UsersController::class, 'teste']);

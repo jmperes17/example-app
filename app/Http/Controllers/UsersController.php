@@ -11,4 +11,12 @@ class UsersController extends Controller
     {
         return view('users', compact('username'));
     }
+
+    public function teste(Request $request)
+    {
+        $this->validate($request,[
+            'name' => 'required',
+            'age' => 'required|numeric'
+        ]);
+    }
 }
