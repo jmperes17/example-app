@@ -9,11 +9,15 @@
 </head>
 
 <body>
-    <?php
+    
 
-    echo "$username";
+    {{ $username }}
 
-    ?>
+    @if(1==1)
+        - Deu certo
+    @endif
+
+   
 </body>
 
 </html>
